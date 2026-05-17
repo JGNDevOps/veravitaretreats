@@ -218,9 +218,9 @@ nav.solid-nav { background:rgba(247,243,237,0.97);backdrop-filter:blur(14px);bor
 .rc-visual-bg { position:absolute;inset:0; }
 .rc-visual-overlay { position:absolute;inset:0;background:linear-gradient(to right,rgba(44,36,24,.38),transparent); }
 .retreat-card.rev .rc-visual-overlay { background:linear-gradient(to left,rgba(44,36,24,.38),transparent); }
-.rc-visual.sifnos .rc-visual-bg { background:linear-gradient(145deg,#5C8090 0%,#4A6878 25%,#3A5868 50%,#6A9090 75%,#8AB0B0 100%); }
-.rc-visual.spain .rc-visual-bg { background:linear-gradient(145deg,#C4903A 0%,#A87830 30%,#8C6028 55%,#7A7848 80%,#A09060 100%); }
-.rc-visual.private .rc-visual-bg { background:linear-gradient(145deg,#3D3025 0%,#5C4A35 35%,#4A3830 60%,#6A5840 100%); }
+.rc-visual.sifnos .rc-visual-bg { background:url('assets/sifnos.jpg') center/cover no-repeat; }
+.rc-visual.spain .rc-visual-bg { background:url('assets/andalusia.jpg') center/cover no-repeat; }
+.rc-visual.private .rc-visual-bg { background:url('assets/private.jpg') center/cover no-repeat; }
 .rc-badge { position:absolute;top:26px;left:26px;padding:8px 16px;font-size:10px;letter-spacing:.2em;text-transform:uppercase; }
 .rc-badge.open { background:var(--terracotta);color:var(--warm-white); }
 .rc-badge.soon { background:var(--gold);color:var(--deep); }
