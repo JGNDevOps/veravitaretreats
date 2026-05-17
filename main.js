@@ -1,3 +1,25 @@
+/* PASSWORD GATE */
+(function(){
+  const gate=document.getElementById('pwGate');
+  if(localStorage.getItem('vv_access')==='1'){gate.remove();}
+  else{gate.style.display='flex';}
+})();
+function checkPw(){
+  const val=document.getElementById('pwInput').value;
+  if(val==='Zwara0501$'){
+    localStorage.setItem('vv_access','1');
+    document.getElementById('pwGate').remove();
+  } else {
+    document.getElementById('pwError').style.display='block';
+    document.getElementById('pwInput').value='';
+    document.getElementById('pwInput').focus();
+  }
+}
+document.addEventListener('DOMContentLoaded',function(){
+  const input=document.getElementById('pwInput');
+  if(input) input.addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();});
+});
+
 /* CURSOR */
 const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
 document.addEventListener('mousemove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';ring.style.left=e.clientX+'px';ring.style.top=e.clientY+'px';});
