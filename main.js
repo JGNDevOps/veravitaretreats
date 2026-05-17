@@ -20,11 +20,6 @@ document.addEventListener('DOMContentLoaded',function(){
   if(input) input.addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();});
 });
 
-/* CURSOR */
-const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
-document.addEventListener('mousemove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';ring.style.left=e.clientX+'px';ring.style.top=e.clientY+'px';});
-document.addEventListener('mouseover',e=>{if(e.target.closest('a,button,input,select,textarea'))ring.classList.add('hovering');else ring.classList.remove('hovering');});
-
 /* NAV */
 const nav=document.getElementById('mainNav');
 window.addEventListener('scroll',()=>{
